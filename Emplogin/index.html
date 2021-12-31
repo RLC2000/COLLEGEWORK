@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Staff Login</title>
+    <!-- Font Google-->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@700&family=Permanent+Marker&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+    <!---we had linked our css file----->
+    <link rel="icon" href="/COLLEGEWORK/hourglass.png">
+</head>
+<body>
+    <div class="full-page">
+        <div class="navbar">
+            <div>
+                <a href='#' class='companylogo'>THE SCHEDULER</a>
+            </div>
+            <nav>
+                <ul id='MenuItems'>
+                    <li><a href='/COLLEGEWORK/about/index.html'>ABOUT</a></li>
+                    <li><a href='#'>COMPLAIN</a></li>
+                    <li><a href='#'>HELP</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div id='login-form'class='login-page'>
+            <div class="form-box">
+                <div class='button-box'>
+                    <div id='btn'></div>
+                    <button type='button'onclick='login()'class='toggle-btn'><p>Team</p></button>
+                    <button type='button'onclick='login1()'class='toggle-btn1'><p>Proj. Manager</p></button>
+                    <button type='button'onclick='login2()'class='toggle-btn2'><p>  Sr. Manager</p></button>
+                </div>
+                <form id='login' class='input-group-login'>
+                    <input type='text'class='input-field'placeholder='Team  Member ID' required >
+		    <input type='password'class='input-field'placeholder='Enter Password' required>
+		    <input type='checkbox'class='check-box'><span>Remember Password</span>
+		    <button type='submit'class='submit-btn' onclick="window.location.href = '/COLLEGEWORK/TMdashboard/tmdash.html'">Log in</button>
+		 </form>
+		 <form id='register' class='input-group-login'>
+		    <input type='text'class='input-field'placeholder='Project Manager ID' required >
+		    <input type='password'class='input-field'placeholder='Enter Password' required>
+		    <input type='checkbox'class='check-box'><span>Remember Password</span>
+		    <button type='submit'class='submit-btn' onclick="window.location.href = '/COLLEGEWORK/PMdashboard/pmdash.html'">Log in</button>
+	         </form>
+             <form id='login2' class='input-group-login'>
+                <input type='text'class='input-field'placeholder='Senior Manager ID' required >
+                <input type='password'class='input-field'placeholder='Enter Password' required>
+                <input type='checkbox'class='check-box'><span>Remember Password</span>
+                <button type='submit'class='submit-btn' onclick="window.location.href = '/COLLEGEWORK/SRdashboard/srdash.html'">Log in</button>
+            </form>
+            </div>
+        </div>
+    </div>
+    <script>
+        var x=document.getElementById('login');
+		var y=document.getElementById('register');
+		var z=document.getElementById('btn');
+        var y2=document.getElementById('login2');
+		function login()
+		{
+			x.style.left='100px';
+			y.style.left='550px';
+			y2.style.left='800px';
+            z.style.left='0px';
+		}
+        function login1()
+		{
+			x.style.left='-400px';
+			y.style.left='100px';
+            y2.style.left='550px';
+            z.style.left='30%';
+		}
+        function login2()
+		{
+			x.style.left='-800px';
+			y.style.left='-450px';
+            y2.style.left='100px';
+            z.style.left='67%';
+		}
+	</script>
+</body>
+</html>
