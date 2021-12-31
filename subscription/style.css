@@ -1,0 +1,101 @@
+/* TESTIMONIAL */
+body {
+	margin:  0;
+}
+.cont{
+    padding: 1% 15% 0%;
+    background-color: #3e4061;
+}
+.head{
+    font-family: 'Permanent Marker';
+    color: whitesmoke;
+}
+.cont .branded{
+    font-family: 'Permanent Marker';
+    color: whitesmoke;
+}
+.cont .branded :hover{
+    font-family: 'Permanent Marker';
+    color: #ffc800;
+}
+.top{
+    color: whitesmoke;
+    margin-left: 5rem;
+    font-size: larger;
+    font-family: 'IBM Plex Serif', serif;;
+}
+.top:hover{
+    color: #ffc800;
+}
+
+.cont1{
+    text-align: center;
+    background-color: #3e4061;
+    color: whitesmoke;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    position:absolute;
+    width:100%;
+    left: 0px;
+    padding-top: 100px;
+}
+#testimonials{
+    font-family: 'Montserrat';
+    text-align: center;
+    background-color: #3e4061;
+    color: #fff;
+}
+.carousel-item{
+    padding: 7% 15%;
+}
+h2{
+    font-family: 'Montserrat';
+    font-weight: 900;
+    font-size: 3rem;
+}
+.testimonial-image{
+    width: 10%;
+    border-radius: 100%;
+    margin: 20px;
+}
+/* press */
+#press{
+    background-color: #3e4061;
+    text-align: center;
+    padding-bottom: 3%;
+}
+.press-img{
+    width: 15%;
+    margin: 20px 20px 50px;
+}
+/* PRICING */
+#pricing{
+    padding: 100px;
+    text-align: center;
+}
+.pricing-column{
+    padding: 3% 2%;
+}
+@media (max-width: 1028px){
+    #title{
+        text-align: center;
+    }
+    .title-image{
+        position: static;
+        padding-top: 25px;
+        transform: rotate(0);
+    }
+  
+}
+/* FOR THE SUBSCRIPTION RENEWAL */
+.row2{
+    padding-top: 2%;
+    padding-left: 30%;
+    padding-right: 30%;
+}
+
+.expiry{
+    font-size: 30px;
+    font-weight: bolder;
+    color: rgb(148, 48, 48);
+}
